@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        PANTAU COVID
+    </title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <top-nav></top-nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box">
+                            <div class="province-select" id="province-select">
+                                <div class="province-select-toggle" id="province-select-toggle">
+                                    <span>
+                                        Nasional
+                                    </span>
+                                    <i class="bx bx-chevron-down"></i>
+                                </div>
+                                <div class="province-select-list" id="province-select-list">
+                                    <input type="text" placeholder="Pencarian Sesuai Provinsi">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div id="updated-time">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-sm-12">
+                                <div class="box box-hover">
+                                    <div class="count count-confirmed">
+                                        <div class="count-icon">
+                                            <i class="bx bxs-virus"></i>
+                                        </div>
+                                        <div class="count-info">
+                                            <h5 id="confirmed-total"></h5>
+                                            <span>terkonfirmasi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4 col-sm-12">
+                                <div class="box box-hover">
+                                    <div class="count count-recovered">
+                                        <div class="count-icon">
+                                            <i class="bx bxs-smile"></i>
+                                        </div>
+                                        <div class="count-info">
+                                            <h5 id="recovered-total"></h5>
+                                            <span>sembuh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4 col-sm-12">
+                                <div class="box box-hover">
+                                    <div class="count count-death">
+                                        <div class="count-icon">
+                                            <i class="bx bxs-sad"></i>
+                                        </div>
+                                        <div class="count-info">
+                                            <h5 id="death-total"></h5>
+                                            <span>meninggal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="box">
+                                    <div class="box-header">
+                                        Data COVID-19 wilayah Provinsi
+                                    </div>
+                                    <div class="box-body">
+                                        <div id="data-provinsi"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <card-info></card-info>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-12 col-sm-12">
+
+                        <div class="box">
+                            <div class="box-header">
+                                Angka Kesembuhan
+                            </div>
+                            <div class="box-body">
+                                <div id="recover-rate-chart"></div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-header">
+                                Urutan Provinsi Terkonfirmasi COVID-19
+                            </div>
+                            <div class="box-body">
+                                <table class="table-countries" id="table-countries">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Provinsi</th>
+                                            <th>Terkonfirmasi</th>
+                                            <th>Sembuh</th>
+                                            <th>Meninggal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <end-footer></end-footer>
+    </footer>
+
+</body>
+</html>
